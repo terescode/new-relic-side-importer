@@ -6,8 +6,14 @@
   "description": "__MSG_extensionName__",
   "icons": {
     "32": "icons/nr-logo-32.png",
-    "64": "icons/nr-logo-32.png"
+    "64": "icons/nr-logo-64.png"
   },
+  "applications": {
+    "gecko": {
+      "id": "scott@terescode.com"
+    }
+  },
+  
   "permissions": [
     "activeTab"
   ],
@@ -19,7 +25,7 @@
   "browser_action": {
     "default_icon": {
       "32": "icons/nr-logo-32.png",
-      "64": "icons/nr-logo-32.png"
+      "64": "icons/nr-logo-64.png"
     },
     "default_title": "__MSG_notificationTitle__"
   }
