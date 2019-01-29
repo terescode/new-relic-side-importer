@@ -1,0 +1,43 @@
+{
+  "name": "new-relic-side-importer",
+  "version": "1.0.0",
+  "description": "Import .side files into a New Relic synthetic scripting monitor",
+  "scripts": {
+    "webpack": "./node_modules/webpack/bin/webpack.js",
+    "webpack:watch": "npm run webpack -- --watch --mode development",
+    "webpack:build": "npm run webpack -- --mode development",
+    "webpack:build-dist": "npm run webpack -- --mode production",
+    "web-ext": "./node_modules/web-ext/bin/web-ext",
+    "web-ext:run": "npm run web-ext -- run --bc --start-url https://www.newrelic.com/ --start-url about:debugging &",
+    "start": "npm run web-ext:run && npm run webpack:watch",
+    "lint": "npm run web-ext -- lint",
+    "build": "npm run web-ext -- build",
+    "sign": "npm run web-ext -- sign",
+    "build-dist": "npm run lint && npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/cli": "^7.1.0",
+    "@babel/core": "^7.1.0",
+    "@babel/preset-env": "^7.1.0",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.2",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.9.0",
+    "eslint-plugin-react": "^7.11.1",
+    "style-loader": "^0.23.0",
+    "web-ext": "^2.9.2",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.1",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "micromodal": "^0.3.2",
+    "selianize": "^3.5.0",
+    "webextension-polyfill": "^0.3.1"
+  }
+}

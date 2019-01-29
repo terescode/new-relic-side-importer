@@ -1,0 +1,14 @@
+# MacOS
+.DS_Store
+
+# NodeJS
+node_modules/*
+
+# Build time assets
+build/*
+reports/*
+web-ext-artifacts/*
+dist/*
+
+# Logs
+*.log

@@ -1,0 +1,26 @@
+{
+  "manifest_version": 2,
+  "default_locale": "en",
+  "name": "__MSG_extensionName__",
+  "version": "1.0",
+  "description": "__MSG_extensionName__",
+  "icons": {
+    "32": "icons/nr-logo-32.png",
+    "64": "icons/nr-logo-32.png"
+  },
+  "permissions": [
+    "activeTab"
+  ],
+  
+  "background": {
+    "scripts": ["dist/js/web-ext/background.js"]
+  },
+
+  "browser_action": {
+    "default_icon": {
+      "32": "icons/nr-logo-32.png",
+      "64": "icons/nr-logo-32.png"
+    },
+    "default_title": "__MSG_notificationTitle__"
+  }
+}

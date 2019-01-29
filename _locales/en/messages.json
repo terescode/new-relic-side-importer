@@ -1,0 +1,14 @@
+{
+  "extensionName": {
+    "message": "New Relic SIDE Importer",
+    "description": "Name of the extension."
+  },
+  "extensionDescription": {
+    "message": "Import .side files into a New Relic synthetic scripting monitor",
+    "description": "Description of the extension."
+  },
+  "notificationTitle": {
+    "message": "Import .side file",
+    "description": "Title of the click notification."
+  }
+}
